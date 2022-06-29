@@ -1,5 +1,6 @@
 //1-INGRESAR DOS NUMEROS
-/* FOR
+// FOR
+/*
 let numero = parseInt(prompt("ingresar un numero para multipilcar hasta 10"));
 let suma = parseInt(prompt("ingresar otro numero para sumar cada resultado"));
 for(let i = 1; i <= 10; i++){
@@ -19,21 +20,20 @@ while (ingreso != "EXIT"){
     }
 }
 */
-// 3-INGRESANDO UN DATO
+
+//3-INGRESANDO UN DATO
 let entrada = "EXIT";
 let salio = "SALIO CON EXITO"
 do{
     if(entrada != "EXIT"){
-       (console.log("el usuario esta ingresando datos"))
-    } 
+        (console.log("el usuario esta ingresando datos"))
+    }
     entrada = prompt("ingresar un dato o EXIT para salir");
     console.log("El usuario ingresó "+ entrada);
-// 
-}while(entrada != "EXIT" ){
-    console.log(`el usuario: ${salio}`)
-    alert(salio)
-}
-
+    if(entrada == "EXIT"){
+         console.log(salio);
+        }
+}while(entrada != "EXIT" )
 
 
 
